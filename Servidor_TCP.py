@@ -45,6 +45,10 @@ def Iniciar_Servidor():
             except Exception as e:
                 print(f'Error al recibir o enviar mensaje: {e}')
 
+        # Cerrar conexón del Sevidor
+        cliente_socket.close()
+        break
+
 
 if __name__ == "__main__":
     Iniciar_Servidor()
